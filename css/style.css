@@ -1,0 +1,352 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	font-family: Helvetica, Segoe UI, roboto;
+	color: #2c2f33;
+	text-align: center;
+}
+ul{
+	list-style: none;
+}
+.container{
+	padding: 0 !important;
+}
+a:hover{
+	text-decoration: none !important;
+	cursor: hand;
+}
+a:visited{
+	text-decoration: none !important;
+}
+section{
+	padding: 150px 0;
+}
+h1.heading{
+	font-size: 28px;
+	line-height: 1.571;
+	margin-bottom: 32px;
+	max-width: 500px;
+	margin-right: auto;
+	margin-left: auto;
+}
+h2.subheading{
+  	font-size: 18px;
+  	font-weight: bold;
+  	line-height: 1.55;
+  	margin-bottom: 25px;
+  	text-align: left;
+  	max-width: 260px;
+}
+p.descp{
+	font-size: 16px;
+	line-height: 1.875;
+	max-width: 780px;
+	color: #5f5f5f;
+	text-align: left;
+}
+h3.superheading{
+	text-transform: uppercase;
+	margin-bottom: 32px;
+	font-size: 12px;
+	line-height: 2.33;
+	color: #5f5f5f;
+	opacity: 0.5;
+}
+/*header starts*/
+header{
+	width: 100%;
+	position: fixed;
+	top:35px;
+	padding: 10px 0;
+	z-index: 9999;
+}
+.logo{
+	display: inline-block;
+	padding-top: 10px;
+	float: left;
+	height:40px; 
+}
+header ul{
+	float: right;
+	margin-bottom: 0;
+}
+header ul li{
+	display: inline-block;
+	float: left;
+	width: auto;
+	margin-right: 18px;
+}
+header ul li:last-child{
+	margin-right: 0;
+}
+header ul li a{
+	display: inline-block;
+	font-size: 13px;
+	color: white;
+	padding: 15px 27px;
+}
+header ul li a:hover, header.sticky #sign-up:hover{
+	color:white;
+}
+#sign-up{
+	border-radius: 24px;
+	background-color: rgba(255,255,255,0.2);
+}
+header.sticky{
+	background-color: white;
+	top:0;
+}
+header.sticky ul li a, header.sticky ul li a:hover{
+	color: #2c2f33;
+}
+header.sticky #sign-up{
+	background-color: #ff7f45;
+	color: white;
+	font-weight: bold;
+}
+
+/*landing section*/
+#landing{
+	height:100vh;
+	background: url(../images/stocksy_comp.png); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: table;
+    width: 100%;
+}
+#landing .container{
+	display: table-row;
+}
+#landing .container .content{
+	display: table-cell;
+	vertical-align: middle;
+	color: white;
+}
+#landing h1.heading{
+	font-size: 32px;
+	font-weight: bold;
+	line-height: 1.375;
+	margin-bottom: 32px;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#landing p.descp{
+	color: white;
+	margin:0 auto 54px auto;
+	text-align: center; 
+}
+.cta{
+	display: inline-block;
+	padding: 20px 57px 20px 57px;
+	font-size: 14px;
+	background-color:#ff7f45;
+	font-weight: bold;
+	border-radius: 30px;
+	color: white;
+	margin: 0 auto;
+	height: 60px; 
+}
+.cta:hover{
+	color:white;
+}
+/*feature section*/
+#features h1.heading{
+	margin-bottom: 100px;
+}
+.feature-list img{
+	height:205px;
+	width: auto;
+	display: inline-block;
+	margin-bottom: 75px;
+}
+/*courses section*/
+#courses p.descp{
+	margin:0 auto 90px auto;
+	text-align: center; 
+}
+.courses-list{
+	width: 360px;
+	height:560px;
+	padding: 0 !important;
+	display: inline-block;
+	float: left;
+	margin-bottom: 45px;
+	border-radius: 4px;
+	box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.05);
+}
+.course-img{
+	height: 300px;
+	background-position: center;
+	background-size: cover;
+	position: relative;
+	border-radius: 4px;
+}
+.free{
+	text-transform: uppercase;
+	color: white;
+	background-color: #1ea498;
+	font-size: 14px;
+	border-radius: 4px;
+	padding: 12px 20px;
+	position: absolute;
+	top: 15px;
+	right: -15px;
+}
+.teacher-img{
+	height: 60px;
+	width: 60px;
+	border-radius: 100%;
+	position: absolute;
+	bottom:-30px;
+	left:148px;
+	border:1px solid #fff;
+	background-size: cover;
+	background-position: center;
+	background-color: #fff;
+}
+.course-detail{
+	position: relative;
+	padding:25px 32px 45px 32px;
+	height:260px;
+}
+.course-detail:last-child, .course-detail:nth-last-child(2){
+	margin-bottom: 0;
+}
+.course-detail h2.subheading{
+	margin-bottom: 24px;
+	font-weight: 600;
+}
+#courses .courses-list .course-detail p.descp{
+	text-align: left;
+	margin: 0;
+	font-size: 14px;
+	line-height: 2;
+}
+#courses .courses-list .course-detail p.descp:last-child{
+	position:absolute;
+	bottom:45px; 
+}
+.price{
+	text-transform: uppercase;
+	color: #1ea498;
+	font-size: 18px;
+	font-weight: bold;
+}
+.dot{
+	width: 2px;
+	height: 2px;
+	border-radius: 100%;
+	margin-right: 20px;
+	margin-left: 20px;
+	margin-bottom: 4px;
+	background-color: #5f5f5f;
+	display: inline-block;
+}
+/*doubts section*/
+#doubts{
+	text-align: left;
+	position: relative;
+	padding: 0;
+}
+#doubts-img{
+	height:750px;
+	width: 50%;
+	background-position: center;
+	background-size: cover;
+	background-image: url("../images/footer.png");
+	display: inline-block;
+	z-index: 9;
+}
+#doubts-content{
+	height: 770px;
+	padding: 186px 144px;
+	background-color: #f4fafa;
+	text-align: left;
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	top: 142px;
+	z-index: 99;
+}
+#doubts-content h1.heading{
+	text-align: left;
+	margin: 0 0 40px 0;
+	max-width: 445px;
+}
+#doubts-content p.descp{
+	text-align: left;
+	margin-bottom: 51px;
+	max-width: 445px;
+}
+#doubts-content a{
+	font-size: 24px;
+	color: #1ea69a;
+	margin-bottom: 0;
+}
+#doubts-content p.descp:nth-last-child(2){
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+/*lead section*/
+#lead{
+	margin-top: 142px;
+	padding-bottom: 0;
+}
+#lead .cta{
+	width:266px;
+	margin-top: 10px;
+}
+#lead img{
+	width: 90%;
+	height:auto;
+	position: relative;
+	bottom: -27px;
+	z-index: 999;
+}
+/*footer*/
+#footer{
+	background-color: #f8f3f1;
+	z-index: 99;
+	padding-bottom: 114px;
+}
+#footer li{
+	font-size: 14px;
+	color: #2c2f33;
+	text-align: left;
+	margin-bottom: 18px;
+}
+#footer h2.subheading{
+	font-size: 16px;
+}
+#footer a{
+	color: inherit;
+	font-size: inherit;
+}
+#contact-us p.descp{
+	text-align: left;
+}
+#contact-us{
+	display: inline-block;
+	width: 196px;
+	float:right;
+}
+#social-network{
+	margin-top: 36px;
+	clear: both;
+}
+#social-network li{
+	display: inline-block;
+	margin-right:14px;
+	margin-bottom:0;
+}
+#social-network li:last-child{
+	margin-right:0; 
+}
+#social-network li img{
+	width: 32px;
+	height: 32px;
+	display: inline-block;
+}
